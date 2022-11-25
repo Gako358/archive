@@ -1,0 +1,89 @@
+* {
+    font:                           "JetBrainsMonoMedium Nerd Font 10";
+
+    red:                            #cc241d;
+    darkred:                        #fb4934;
+    green  :                        #98971a;
+    darkgreen:                      #b8bb26;
+    yellow:                         #d79921;
+    darkyellow:                     #fabd2f;
+    blue:                           #458588;
+    darkblue:                       #83a598;
+    purple:                         #b16286;
+    darkpurple:                     #d3869b;
+    cyan:                           #689d6a;
+    darkcyan:                       #8ec07c;
+    foreground:                     #ebdbb2;
+    background:                     #282828;
+    border:                         #928374;
+
+    background-color: transparent;
+    text-color:       @foreground;
+    padding:          0px;
+    margin:           0px;
+}
+
+
+window {
+  fullscreen: true;
+  padding: 1em;
+  background-color: @background;
+}
+
+mainbox {
+  padding:  8px;
+}
+
+inputbar {
+  background-color: @blue;
+  margin:   0px calc( 27% - 120px );
+  padding:  2px 4px;
+  spacing:  4px;
+  font-size: 30px;
+
+  border:         20px;
+  border-radius:  10px;
+  border-color:   @blue;
+  children: [entry];
+}
+
+prompt {
+  enabled:  false;
+}
+
+entry {
+  placeholder:        "Search";
+  placeholder-color:  @foreground;
+}
+
+listview {
+  margin:   48px calc( 50% - 560px );
+  spacing:  48px;
+  columns:  6;
+  fixed-columns: true;
+}
+
+element, element-text, element-icon {
+  cursor: pointer;
+}
+
+element {
+  padding:      8px;
+  spacing:      4px;
+
+  orientation:    vertical;
+  border-radius:  16px;
+}
+
+element selected {
+  background-color: @border;
+}
+
+element-icon {
+  size: 4em;
+  horizontal-align: 0.5;
+}
+
+element-text {
+  horizontal-align: 0.5;
+}

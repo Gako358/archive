@@ -1,0 +1,70 @@
+ncmpcpp_directory = ~/.config/ncmpcpp
+lyrics_directory = ~/.config/ncmpcpp/lyrics
+
+# CONNECTION
+# ---
+# mpd_host       = localhost
+# mpd_port       = 6600
+# mpd_music_dir  = ~/Music
+
+# VISUALIZER
+# ---
+visualizer_data_source          = "/tmp/mpd.fifo"
+visualizer_output_name          = "Visualizer"
+visualizer_in_stereo            = "no"
+visualizer_fps                  = 30
+visualizer_type                 = "spectrum"
+visualizer_look                 = "+│"
+visualizer_spectrum_smooth_look = "no"
+
+# DELAYS
+# ---
+playlist_disable_highlight_delay = 0
+message_delay_time               = 2
+
+# SONG FORMAT
+# ---
+song_list_format                    = "{%a - }{%t}|{%f}$R{%l}"
+song_status_format                  = "$(white){{%a - }{%t}}|{%f}$(end)"
+song_library_format                 = "{%n. }{%t}|{%f}"
+current_item_prefix                 = "$b$(red_black)"
+current_item_suffix                 = "$(end)$/b"
+current_item_inactive_column_prefix = "$b$(white_black)"
+current_item_inactive_column_suffix = "$(end)$/b"
+now_playing_prefix                  = "$b$(red)>$(end) "
+now_playing_suffix                  = "$/b"
+browser_sort_mode                   = name
+browser_sort_format                 = {%a - }{%t}|{%f} {%l}
+
+# VARIOUS SETTINGS
+# ---
+playlist_display_mode                       = classic
+volume_change_step                          = 5
+progressbar_look                            = "──"
+user_interface                              = classic
+media_library_primary_tag                   = album_artist
+header_visibility                           = no
+statusbar_visibility                        = yes
+connected_message_on_startup                = no
+follow_now_playing_lyrics                   = yes
+fetch_lyrics_for_current_song_in_background = no
+enable_window_title                         = no
+external_editor                             = nvim
+use_console_editor                          = yes
+
+# COLORS
+# ---
+colors_enabled            = yes
+main_window_color         = white
+color1                    = white
+color2                    = white
+progressbar_color         = black
+progressbar_elapsed_color = red
+window_border_color       = white
+statusbar_color           = yellow
+statusbar_time_color      = white
+player_state_color        = white:b
+
+# NOTIFICATION
+# ---
+execute_on_song_change = notify-send "$(mpc --format '%title% \n%artist% - %album%' current)" -i /usr/share/icons/mXgruvbox-Material/128x128/apps/4kyoutubetomp3.svg

@@ -1,0 +1,14 @@
+# /etc/fstab: static file system information.
+#
+/dev/sda1		/boot/efi	vfat		rw,relatime	0 2
+/dev/sda3		/var/log	btrfs		rw,relatime,space_cache=v2,ssd,compress=lzo,subvol=/@log	    0 0
+# /dev/sda3		/.snapshots	btrfs		rw,relatime,space_cache=v2,ssd,compress=lzo,subvol=/@snapshots	0 0
+/dev/sda3		/var/cache	btrfs		rw,relatime,space_cache=v2,ssd,compress=lzo,subvol=/@cache	    0 0
+/dev/sda3		/home		btrfs		rw,relatime,space_cache=v2,ssd,compress=lzo,subvol=/@home	    0 0
+/dev/sda3		/btrfs		btrfs		rw,relatime,space_cache=v2,ssd,compress=lzo,subvolid=5		    0 0
+
+/dev/sda2       swap		swap		rw,relatime,pri=1	0 0
+
+tmpfs /var/tmp         tmpfs rw,nosuid,noatime,nodev,size=7G,mode=1777 0 0
+tmpfs /var/tmp/portage tmpfs rw,nosuid,noatime,nodev,size=9G,mode=775,uid=portage,gid=portage,x-mount.mkdir=775 0 0
+

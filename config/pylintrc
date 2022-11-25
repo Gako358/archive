@@ -1,0 +1,81 @@
+[MASTER]
+
+# Use multiple processes to speed up Pylint.
+jobs=3
+
+
+[MESSAGES CONTROL]
+
+# Disable all to choose the Tests one by one
+disable=all
+
+# Tests
+enable=zip-builtin-not-iterating,
+       range-builtin-not-iterating,
+       map-builtin-not-iterating,
+       not-in-loop,
+       function-redefined,
+       duplicate-argument-name,
+       return-in-init,
+       return-outside-function,
+       return-arg-in-generator,
+       nonexistent-operator,
+       yield-outside-function,
+       assert-on-tuple,
+       duplicate-key,
+       pointless-statement,
+       consider-iterating-dictionary,
+       consider-using-enumerate,
+       invalid-unary-operand-type,
+       unsupported-binary-operation,
+       repeated-keyword,
+       no-value-for-parameter,
+       too-many-function-args,
+       unexpected-keyword-arg,
+       bad-except-order,
+       catching-non-exception,
+       raising-bad-type,
+       raising-non-exception,
+       import-error,
+       import-self,
+       used-before-assignment,
+       bad-indentation,       		
+       mixed-indentation,     		
+       unnecessary-semicolon,
+       unused-variable,
+       undefined-variable,
+       unused-import,
+       unused-argument,
+       duplicate-code,
+       no-method-argument,
+       no-self-argument
+
+[REPORTS]
+
+# Tells whether to display a full report or only the messages
+reports=no
+
+# Activate the evaluation score.
+score=no
+
+
+[FORMAT]
+
+# Regexp for a line that is allowed to be longer than the limit.
+ignore-long-lines=^\s*(# )?<?https?://\S+>?$
+
+# Number of spaces of indent required inside a hanging or continued line.
+indent-after-paren=4
+
+# String used as indentation unit. This is usually "    " (4 spaces) or "\t" (1
+# tab).
+indent-string='    '
+
+# Maximum number of lines in a module
+max-module-lines=1000
+
+
+[EXCEPTIONS]
+
+# Exceptions that will emit a warning when being caught.
+overgeneral-exceptions=Exception

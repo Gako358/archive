@@ -1,0 +1,90 @@
+#!/bin/bash
+
+# Find the directory the scripts are stored in
+function get_source_dir() {
+	local source="${BASH_SOURCE[0]}"
+	while [[ -h $source ]]
+	do
+		local tmp
+		tmp="$(cd -P "$(dirname "${source}")" && pwd)"
+		source="$(readlink "${source}")"
+		[[ $source != /* ]] && source="${tmp}/${source}"
+	done
+
+	echo -n "$(realpath "$(dirname "${source}")")"
+}
+
+ACTUAL_WORKING_DIRECTORY="$(realpath "$(pwd)")" || exit 1
+export ACTUAL_WORKING_DIRECTORY
+
+GENTOO_INSTALL_REPO_DIR="$(get_source_dir)"
+export GENTOO_INSTALL_REPO_DIR
+
+GENTOO_INSTALL_DIR="$GENTOO_INSTALL_REPO_DIR"
+
+
+# Load the config file
+
+# Files to be copied to the target system
+source "$GENTOO_INSTALL_DIR/scripts/filesystem.sh"
+# Base system
+source "$GENTOO_INSTALL_DIR/scripts/base.sh"
+# Stage 1
+source "$GENTOO_INSTALL_DIR/scripts/stage1.sh"
+# Stage 2
+source "$GENTOO_INSTALL_DIR/scripts/stage2.sh"
+# Stage 3
+source "$GENTOO_INSTALL_DIR/scripts/stage3.sh"
+# Final packages
+source "$GENTOO_INSTALL_DIR/scripts/final.sh"
+# rebooting
+source "$GENTOO_INSTALL_DIR/scripts/rebooting.sh"
+
+function setup_filesystem() {
+    # setup filesystem
+    filesystem
+    echo "done"
+}
+
+function setup_base() {
+    # setup base system
+    cp -rf "$GENTOO_INSTALL_DIR/" "/mnt/"
+    cp "/mnt/gentoo/make.conf" "/mnt/etc/portage/make.conf"
+    echo "copied make.conf"
+    cp "/mnt/gentoo/fstab" "/mnt/etc/fstab"
+    echo "copied fstab"
+    base
+    echo "done"
+}
+
+function setup_stage1() {
+    # setup stage 1
+    mount /var/tmp/portage/
+    stage1
+    echo "done"
+}
+
+function setup_stage2() {
+    # setup stage 2
+    stage2
+    echo "done"
+}
+
+function setup_stage3() {
+    # setup stage 3
+    stage3
+    echo "done"
+}
+
+function setup_final() {
+    # Pull inn my ebuild and install last packages
+    final
+    echo "done"
+}
+
+function setup_exit() {
+    # Unmount system before rebooting
+    finished
+}
+
+"$@"

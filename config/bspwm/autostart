@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Applications
+# ~/.config/polybar/launch &
+~/.config/eww/launch_bar
+
+bspc wm -O DP-1 HDMI-1 HDMI-2
+
+mopidy &
+firefox &
+discord &
+
+# Startup terminal Applications
+kitty --class 'weechat' -e weechat &
