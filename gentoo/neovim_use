@@ -1,0 +1,4 @@
+app-editors/neovim LUA_SINGLE_TARGET: -lua5-1 luajit
+>=dev-lua/luv-1.36.0.0 lua_single_target_luajit -lua_single_target_lua5-1
+>=dev-lua/lpeg-1.0.2-r101 lua_targets_luajit
+>=dev-lua/mpack-1.0.9-r1 lua_targets_luajit

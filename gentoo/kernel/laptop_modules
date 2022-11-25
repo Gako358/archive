@@ -1,0 +1,65 @@
+Module                  Size  Used by
+hid_multitouch         28672  0
+intel_tcc_cooling      20480  0
+x86_pkg_temp_thermal    20480  0
+intel_powerclamp       20480  0
+crct10dif_pclmul       16384  1
+crc32_pclmul           16384  0
+crc32c_intel           24576  0
+iTCO_wdt               16384  0
+ghash_clmulni_intel    16384  0
+snd_soc_skl           143360  0
+intel_pmc_bxt          16384  1 iTCO_wdt
+iTCO_vendor_support    16384  1 iTCO_wdt
+iwlmvm                344064  0
+aesni_intel           380928  4
+snd_soc_sst_ipc        16384  1 snd_soc_skl
+crypto_simd            16384  1 aesni_intel
+snd_soc_sst_dsp        36864  1 snd_soc_skl
+asus_nb_wmi            28672  0
+i915                 2576384  28
+snd_hda_ext_core       32768  1 snd_soc_skl
+asus_wmi               45056  1 asus_nb_wmi
+snd_soc_core          299008  1 snd_soc_skl
+platform_profile       16384  1 asus_wmi
+uvcvideo              118784  0
+i2c_i801               32768  0
+snd_compress           20480  1 snd_soc_core
+btusb                  45056  0
+videobuf2_vmalloc      16384  1 uvcvideo
+cec                    65536  1 i915
+snd_soc_acpi_intel_match    61440  1 snd_soc_skl
+iwlwifi               311296  1 iwlmvm
+btrtl                  20480  1 btusb
+videobuf2_memops       16384  1 videobuf2_vmalloc
+btbcm                  20480  1 btusb
+snd_soc_acpi           16384  2 snd_soc_acpi_intel_match,snd_soc_skl
+videobuf2_v4l2         36864  1 uvcvideo
+btintel                40960  1 btusb
+ttm                    73728  1 i915
+videobuf2_common       65536  4 videobuf2_vmalloc,videobuf2_v4l2,uvcvideo,videobuf2_memops
+processor_thermal_device_pci_legacy    16384  0
+mei_hdcp               20480  0
+drm_kms_helper        299008  1 i915
+intel_xhci_usb_role_switch    16384  0
+processor_thermal_device    20480  1 processor_thermal_device_pci_legacy
+roles                  16384  1 intel_xhci_usb_role_switch
+processor_thermal_rfim    16384  1 processor_thermal_device
+syscopyarea            16384  1 drm_kms_helper
+sysfillrect            16384  1 drm_kms_helper
+processor_thermal_mbox    16384  2 processor_thermal_rfim,processor_thermal_device
+sysimgblt              16384  1 drm_kms_helper
+intel_lpss_pci         28672  0
+fb_sys_fops            16384  1 drm_kms_helper
+processor_thermal_rapl    16384  1 processor_thermal_device
+intel_lpss             16384  1 intel_lpss_pci
+intel_soc_dts_iosf     20480  1 processor_thermal_device_pci_legacy
+video                  49152  2 asus_wmi,i915
+int3403_thermal        16384  0
+int340x_thermal_zone    16384  2 int3403_thermal,processor_thermal_device
+backlight              20480  4 video,drm_kms_helper,asus_wmi,i915
+int3400_thermal        16384  0
+acpi_thermal_rel       16384  1 int3400_thermal
+intel_pmc_core         53248  0
+tpm_crb                16384  0
+asus_wireless          16384  0

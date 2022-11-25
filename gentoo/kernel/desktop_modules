@@ -1,0 +1,19 @@
+Module                  Size  Used by
+uvcvideo              118784  0
+videobuf2_vmalloc      16384  1 uvcvideo
+snd_usb_audio         319488  0
+snd_usbmidi_lib        36864  1 snd_usb_audio
+snd_rawmidi            36864  1 snd_usbmidi_lib
+wl                   6418432  0
+nouveau              2351104  14
+sp5100_tco             16384  0
+ccp                    94208  0
+watchdog               24576  1 sp5100_tco
+snd_hda_codec_hdmi     65536  0
+igb                   221184  0
+sha1_generic           16384  1 ccp
+dca                    16384  1 igb
+xhci_pci               20480  0
+xhci_pci_renesas       16384  1 xhci_pci
+gpio_amdpt             16384  0
+gpio_generic           16384  1 gpio_amdpt

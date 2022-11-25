@@ -1,0 +1,88 @@
+00:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+	Subsystem: ASUSTeK Computer Inc. Starship/Matisse Root Complex
+00:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+	Subsystem: ASUSTeK Computer Inc. Starship/Matisse IOMMU
+00:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:01.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+	Kernel driver in use: pcieport
+00:01.3 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+	Kernel driver in use: pcieport
+00:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+	DeviceName:  Onboard IGD
+00:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:03.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+	Kernel driver in use: pcieport
+00:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+	Kernel driver in use: pcieport
+00:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+	Kernel driver in use: pcieport
+00:14.0 SMBus: Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller (rev 61)
+	Subsystem: ASUSTeK Computer Inc. FCH SMBus Controller
+	Kernel driver in use: piix4_smbus
+	Kernel modules: sp5100_tco
+00:14.3 ISA bridge: Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge (rev 51)
+	Subsystem: ASUSTeK Computer Inc. FCH LPC Bridge
+00:18.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 0
+00:18.1 Host bridge: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 1
+00:18.2 Host bridge: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 2
+00:18.3 Host bridge: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 3
+	Kernel driver in use: k10temp
+00:18.4 Host bridge: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 4
+00:18.5 Host bridge: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 5
+00:18.6 Host bridge: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 6
+00:18.7 Host bridge: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 7
+01:00.0 Non-Volatile memory controller: Phison Electronics Corporation E12 NVMe Controller (rev 01)
+	Subsystem: Phison Electronics Corporation E12 NVMe Controller
+	Kernel driver in use: nvme
+02:00.0 USB controller: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset USB 3.1 XHCI Controller (rev 01)
+	Subsystem: ASMedia Technology Inc. 400 Series Chipset USB 3.1 XHCI Controller
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+02:00.1 SATA controller: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset SATA Controller (rev 01)
+	Subsystem: ASMedia Technology Inc. 400 Series Chipset SATA Controller
+	Kernel driver in use: ahci
+02:00.2 PCI bridge: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Bridge (rev 01)
+	Kernel driver in use: pcieport
+03:00.0 PCI bridge: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01)
+	Kernel driver in use: pcieport
+03:01.0 PCI bridge: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01)
+	Kernel driver in use: pcieport
+03:04.0 PCI bridge: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01)
+	Kernel driver in use: pcieport
+04:00.0 Ethernet controller: Intel Corporation I211 Gigabit Network Connection (rev 03)
+	Subsystem: ASUSTeK Computer Inc. I211 Gigabit Network Connection
+	Kernel driver in use: igb
+	Kernel modules: igb
+05:00.0 Network controller: Broadcom Inc. and subsidiaries BCM4360 802.11ac Wireless Network Adapter (rev 03)
+	Subsystem: ASUSTeK Computer Inc. BCM4360 802.11ac Wireless Network Adapter
+	Kernel driver in use: wl
+	Kernel modules: bcma, wl
+06:00.0 Non-Volatile memory controller: Phison Electronics Corporation E7 NVMe Controller (rev 01)
+	Subsystem: Phison Electronics Corporation E7 NVMe Controller
+	Kernel driver in use: nvme
+07:00.0 VGA compatible controller: NVIDIA Corporation GP104 [GeForce GTX 1080] (rev a1)
+	Subsystem: ASUSTeK Computer Inc. GP104 [GeForce GTX 1080]
+	Kernel driver in use: nouveau
+	Kernel modules: nvidiafb, nouveau
+07:00.1 Audio device: NVIDIA Corporation GP104 High Definition Audio Controller (rev a1)
+	Subsystem: ASUSTeK Computer Inc. GP104 High Definition Audio Controller
+	Kernel driver in use: snd_hda_intel
+08:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+	Subsystem: ASUSTeK Computer Inc. Starship/Matisse PCIe Dummy Function
+09:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP
+	Subsystem: ASUSTeK Computer Inc. Starship/Matisse Reserved SPP
+09:00.1 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Cryptographic Coprocessor PSPCPP
+	Subsystem: ASUSTeK Computer Inc. Starship/Matisse Cryptographic Coprocessor PSPCPP
+	Kernel driver in use: ccp
+	Kernel modules: ccp
+09:00.3 USB controller: Advanced Micro Devices, Inc. [AMD] Matisse USB 3.0 Host Controller
+	Subsystem: ASUSTeK Computer Inc. Matisse USB 3.0 Host Controller
+	Kernel driver in use: xhci_hcd
+	Kernel modules: xhci_pci
+09:00.4 Audio device: Advanced Micro Devices, Inc. [AMD] Starship/Matisse HD Audio Controller
+	Subsystem: ASUSTeK Computer Inc. Starship/Matisse HD Audio Controller
+	Kernel driver in use: snd_hda_intel
