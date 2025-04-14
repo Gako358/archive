@@ -1,5 +1,0 @@
-require('module.notifications')
-require('module.savefloats')
-require('module.auto-start')
-require('module.decorate-client')
-require('module.exit-screen')
